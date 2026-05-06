@@ -61,3 +61,9 @@ foreach ($pathPattern in $knownPaths) {
 forge test
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-forge-rel-budget-detail.ps1
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-forge-rel-budget-properties.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-forge-rel-budget-golden.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

@@ -1,0 +1,17 @@
+{
+  "repo": "forge-rel-budget-dock",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 178,
+    "watch": 98
+  },
+  "terms": [
+    "budget pressure",
+    "failure width",
+    "recovery gap",
+    "runbook drift"
+  ]
+}
